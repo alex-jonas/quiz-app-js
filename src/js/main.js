@@ -41,3 +41,10 @@ const bookmarkAnswerIcon = document.querySelector('[data-js=bookmark-icon]')
 bookmarkAnswerIcon.addEventListener('click', () => {
   bookmarkAnswerIcon.classList.toggle('card__bookmark-icon--active')
 })
+
+const showAnswerButton = document.querySelector('[data-js=show-answer-button]')
+const firstAnswer = document.querySelector('[data-js=first-answer]')
+
+showAnswerButton.addEventListener('click', () => {
+  firstAnswer.classList.toggle('d-none')
+})
