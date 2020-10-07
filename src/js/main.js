@@ -35,3 +35,9 @@ linkProfile.addEventListener('click', () => {
   profileSite.classList.remove('d-none')
   bookmarksSite.classList.add('d-none')
 })
+
+const bookmarkAnswerIcon = document.querySelector('[data-js=bookmark-icon]')
+
+bookmarkAnswerIcon.addEventListener('click', () => {
+  bookmarkAnswerIcon.classList.toggle('card__bookmark-icon--active')
+})
