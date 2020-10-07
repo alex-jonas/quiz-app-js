@@ -7,7 +7,7 @@
     <title>Quiz-App | Home</title>
     <script defer src="js/main.js"></script>
   </head>
-  <body>
+  <body class="body-mode">
     <header class="header center">
       <h1 class="header__title">Quiz-App</h1>
     </header>
@@ -186,7 +186,7 @@
 
     <!-- Create-Site -->
     <main data-js="create-site" class="main-grid--1column d-none">
-      <form class="form" action="">
+      <form data-js="form" class="form" action="">
         <label for="textarea1"
           >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
           placeat, reiciendis natus dolor!</label
@@ -224,7 +224,7 @@
           id="tags-input"
           required
         />
-
+        <input data-js="btn-reset" class="button" type="reset" value="Reset" />
         <input class="button" type="submit" value="Submit" />
       </form>
     </main>
@@ -253,6 +253,7 @@
         <li class="tag-list__item">tag3</li>
         <li class="tag-list__item">tag4</li>
       </ul>
+      <button class="button" data-js="mode-btn">Dark-Mode</button>
       <button class="button grid-span">Logout</button>
     </main>
 

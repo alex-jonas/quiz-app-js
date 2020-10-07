@@ -17,6 +17,11 @@ body {
   color: var(--text-color1);
 }
 
+.darkmode {
+  background: #262626;
+  color: #d4d4d4;
+}
+
 p,
 h1,
 h2,

@@ -48,3 +48,10 @@ const firstAnswer = document.querySelector('[data-js=first-answer]')
 showAnswerButton.addEventListener('click', () => {
   firstAnswer.classList.toggle('d-none')
 })
+
+const resetButton = document.querySelector('[data-js=btn-reset]')
+const form = document.querySelector('[data-js=form]')
+
+resetButton.addEventListener('click', () => {
+  form.reset()
+})
