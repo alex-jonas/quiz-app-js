@@ -55,3 +55,10 @@ const form = document.querySelector('[data-js=form]')
 resetButton.addEventListener('click', () => {
   form.reset()
 })
+
+const modeButton = document.querySelector('[data-js=mode-btn]')
+const body = document.querySelector('body')
+
+modeButton.addEventListener('click', () => {
+  body.classList.toggle('darkmode')
+})
